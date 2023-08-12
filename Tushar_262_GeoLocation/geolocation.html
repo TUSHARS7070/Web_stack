@@ -1,0 +1,77 @@
+
+<html>
+
+<head>
+    <title>GEO_LOCATION</title>
+    <Link href="./maps.css" rel="stylesheet" />
+    <Link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAan3acAGO35HCbdgY7a_vFwSk8d5Ms2QU&libraries=places&callback=initMap"
+        async defer></script>
+</head>
+
+<body class="container">
+    <div class="navbar">
+        Get Your Location
+    </div>
+    <button id="showLocation"><b>Show My Location</b></button>
+    <div class="map-box d-flex ">
+        <div id="map" class="map col-6">
+        </div>
+        <div class="text col-6">
+            <!-- <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="20,50 80,20 80,80" fill="white" />
+            </svg> -->
+            <p>
+                I have created a map using the Google Maps API. The layout of the map appears to have been 
+                designed using a grid system, specifically Bootstrap columns, which helps in organizing the
+                map and its elements in a structured manner. Additionally, you've incorporated a small SVG
+                arrow positioned above the text, possibly serving as a visual indicator or decoration on
+                your map interface. This combination of technologies suggests that you've employed web 
+                development tools and techniques to craft a visually appealing and functional map 
+                display on your webpage.
+            </p>
+        </div>
+    </div>
+    <script>
+        let map;
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: { lat: 0, lng: 0 }, // Default center
+                zoom: 14
+            });
+        }
+
+        function showMyLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function (position) {
+                    const myLocation = {
+                        lat: position.coords.latitude,
+                        lng: position.coords.longitude
+                    };
+
+                    map.setCenter(myLocation);
+
+                    const marker = new google.maps.Marker({
+                        position: myLocation,
+                        map: map,
+                        title: 'My Location'
+                    });
+                });
+            } else {
+                alert('Geolocation is not supported by this browser.');
+            }
+        }
+
+        document.getElementById('showLocation').addEventListener('click', showMyLocation);
+    </script>
+    <div class="d-flex">
+
+    </div>
+</body>
+
+</html>

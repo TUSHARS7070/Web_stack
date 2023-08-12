@@ -1,0 +1,51 @@
+
+body {
+    background-image: url(./earth.jpg);
+    background-attachment: fixed;
+    background-repeat:no-repeat ;
+    background-size: cover;
+}
+
+
+.text {
+    color: white;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.navbar {
+    background-color: transparent;
+    font-size: 75px;
+    color: white;
+    text-align: center;
+    padding:1rem;
+    height: 50vh;
+}
+
+#showLocation {
+    
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    color: white;
+    border: 3px solid rgb(255, 255, 255);
+    padding: 1rem;
+    border-radius: 15px;
+    margin: 1rem;
+}
+
+.map.box {
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.map {
+    width: 150%;
+    height: 500px;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 3px solid rgb(110, 108, 108);
+    margin: 1rem;
+}
+
