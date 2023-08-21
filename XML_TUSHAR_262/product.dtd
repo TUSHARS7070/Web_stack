@@ -2,7 +2,7 @@
 <!ELEMENT products (product+)>
   <!ELEMENT product (id, name, price, quantity, category)>
   <!ATTLIST id pid ID #REQUIRED>
-  <!ELEMENT name (#DEODATA)>
-  <!ELEMENT price (#DEODATA)>
-  <!ELEMENT quantity (#DEODATA)>
-  <!ELEMENT category (#DEODATA)>
+  <!ELEMENT name (#PCDATA)>
+  <!ELEMENT price (#PCDATA)>
+  <!ELEMENT quantity (#PCDATA)>
+  <!ELEMENT category (#PCDATA)>
