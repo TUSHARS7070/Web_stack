@@ -1,0 +1,33 @@
+[
+    {
+      "title": "The Financier",
+      "author": "Theodore Dreiser",
+      "genre": "Psychological Fiction",
+      "published": "1912"
+    },
+    {
+      "title": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "genre": "Fiction",
+      "published": "1951"
+    },
+    {
+      "title": "Looking for Fireworks",
+      "author": "Holly Cavendish",
+      "genre": "Romance novel",
+      "published": "2012"
+    },
+    {
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "genre": "Fiction",
+      "published": "1960"
+    },
+    {
+      "title": "The Art of Happiness: A Handbook for Living",
+      "author": "Dalai Lama and Howard C. Cutler",
+      "genre": "Self-help book",
+      "published": "1998"
+    }
+  ]
+  
