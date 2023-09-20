@@ -1,0 +1,50 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  form {
+    padding: 1rem;
+    margin: 1rem;
+    background: radial-gradient(circle, rgb(247, 190, 104), white);
+    border-radius: 50px;
+  }
+  
+  .cards-layout {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .cards {
+    margin: 1rem;
+    padding: 1rem;
+    background: linear-gradient(to right, rgb(227, 153, 153), rgb(232, 232, 139));
+    color: white;
+    border-radius: 10px;
+    width: 60%;
+  }
+  
+  .cards h2 {
+    font-size: 23px;
+    font-weight: 600;
+    text-align: start;
+    color: rgb(0, 0, 0);
+  }
+  
+  .cards p {
+    font-size: 16px;
+    text-align: start;
+  }
+  
+  button {
+    background: radial-gradient(circle, rgb(247, 190, 104), white);
+    color: rgb(0, 0, 0);
+    font-size: 600;
+    padding: 1rem;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+  }
+  
