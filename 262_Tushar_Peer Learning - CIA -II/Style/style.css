@@ -1,0 +1,115 @@
+/* Custom CSS for LearnWell Blog Platform */
+
+/* Header styles */
+header {
+  background-color: #4d82b7;
+  padding: 10px 0;
+}
+
+
+
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.navbar-toggler-icon {
+  color: #a92a2a;
+}
+
+/* Article listing styles */
+.card {
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  color: #bb9653;
+}
+
+/* Footer styles */
+footer {
+  background-color: #d9e1e9;
+  color: #1b1f22;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* Add more styles as needed */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.profile-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.avatar img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-info h1 {
+  margin: 0;
+}
+
+.contributions {
+  background-color: rgba(218, 183, 183, 0.971);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.contributions h2 {
+  margin-top: 20px;
+}
+
+.contact-us {
+  background-color: grey;
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center;
+  border-radius: 10px;
+}
